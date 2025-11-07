@@ -1,0 +1,10 @@
+# Ignore TPM and plugins (managed by TPM)
+plugins/
+
+# Ignore backup files
+*.bak
+*.backup
+*~
+
+# Ignore tmux resurrection files (if using tmux-resurrect)
+resurrect/
