@@ -18,14 +18,14 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     if [[ -n $(git status -s 2>/dev/null) ]]; then
         # Dirty - has changes
         status="●"
-        color="#d79921"  # yellow
+        color="#282828"  # dark text (same as path text)
     else
         # Clean
         status="✓"
-        color="#98971a"  # green
+        color="#282828"  # dark text (same as path text)
     fi
 
-    # Output with Gruvbox colors
+    # Output with dark text (readable on green/yellow background)
     echo -n "#[fg=$color] $branch $status"
 else
     # Not in a git repo
